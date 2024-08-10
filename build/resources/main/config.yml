@@ -1,0 +1,24 @@
+voidless-worlds:
+  - "world"
+
+y-voidless-teleport-location: # This is the y that the player need to trigger to be teleported in the voidless-teleport-location
+  # if the player is below this y, he will be teleported to the voidless-teleport-location
+  # if you select "specific" the player will be teleported to the y specified in the "specific" section, so you can have different y for different worlds
+  # if you select "global" the player will be teleported to the y specified in the "global" section, so you can have the same y for all worlds
+  type: "specific"
+  specific:
+      "world": "-100"
+  global: "-100"
+
+voidless-teleport-location: # This is the location where the player will be teleported if he tries to go into the void
+  # The format is "world;x;y;z;yaw;pitch"
+  # if you select "specific" the player will be teleported to the location specified in the "specific" section, so you can have different locations for different worlds
+  # if you select "global" the player will be teleported to the location specified in the "global" section, so you can have the same location for all worlds
+  type: "specific" # "specific" or "global"
+  specific:
+    "world": "world;0;100;0;0;0"
+  global: "%world%;0;100;0;0;0" # %world% will be replaced with the world name
+
+message:
+  enabled: false
+  content: "&cHehe you tried, impossible to go into the void with NeoVoidless!" # %player% placeholder

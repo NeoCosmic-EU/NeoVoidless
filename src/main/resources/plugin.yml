@@ -1,0 +1,7 @@
+name: NeoVoidless
+version: '${version}'
+main: net.neocosmic.neovoidless.NeoVoidless
+commands:
+  voidlessreload:
+    description: Reload the plugin
+    usage: /voidlessreload
